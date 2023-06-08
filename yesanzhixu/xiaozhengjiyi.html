@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>小镇记忆</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style2.css">
+    <style>
+    url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+:root {
+  font-size: 15px;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background-color: #FFEC86;
+  background-image:
+    radial-gradient(closest-side, rgba(111, 158,66, 1), rgba(111, 158,66,  0)),
+    radial-gradient(closest-side, rgba(170, 207, 215, 1), rgba(170, 207, 215, 0)),
+    radial-gradient(closest-side, rgba(231, 192, 152, 1), rgba(231, 192, 152, 0)),
+    radial-gradient(closest-side, rgba(122, 207, 227, 1), rgba(122, 207, 227,  0)),
+    radial-gradient(closest-side, rgba(170, 207, 215, 1), rgba(170, 207, 215,0));
+  background-size:
+    130vmax 130vmax,
+    80vmax 80vmax,
+    90vmax 90vmax,
+    110vmax 110vmax,
+    90vmax 90vmax;
+  background-position:
+    -80vmax -80vmax,
+    60vmax -30vmax,
+    10vmax 10vmax,
+    -30vmax -10vmax,
+    50vmax 50vmax;
+  background-repeat: no-repeat;
+  animation: 10s movement linear infinite;
+}
+
+  #parent{
+       margin: auto;
+       position:absolute;
+       left: 0;
+       top: 0;
+       right: 0;
+       bottom: 0;
+       min-width: 100%;
+       min-height:100%;
+   }
+
+/*
+body::after {
+  content: '';
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+}*/
+
+span {
+  position: relative;
+  z-index: 10;
+  display: flex;
+
+
+}
+
+@keyframes movement {
+  0%, 100% {
+    background-size:
+      130vmax 130vmax,
+      80vmax 80vmax,
+      90vmax 90vmax,
+      110vmax 110vmax,
+      90vmax 90vmax;
+    background-position:
+      -80vmax -80vmax,
+      60vmax -30vmax,
+      10vmax 10vmax,
+      -30vmax -10vmax,
+      50vmax 50vmax;
+  }
+  25% {
+    background-size:
+      100vmax 100vmax,
+      90vmax 90vmax,
+      100vmax 100vmax,
+      90vmax 90vmax,
+      60vmax 60vmax;
+    background-position:
+      -60vmax -90vmax,
+      50vmax -40vmax,
+      0vmax -20vmax,
+      -40vmax -20vmax,
+      40vmax 60vmax;
+  }
+  50% {
+    background-size:
+      80vmax 80vmax,
+      110vmax 110vmax,
+      80vmax 80vmax,
+      60vmax 60vmax,
+      80vmax 80vmax;
+    background-position:
+      -50vmax -70vmax,
+      40vmax -30vmax,
+      10vmax 0vmax,
+      20vmax 10vmax,
+      30vmax 70vmax;
+  }
+  75% {
+    background-size:
+      90vmax 90vmax,
+      90vmax 90vmax,
+      100vmax 100vmax,
+      90vmax 90vmax,
+      70vmax 70vmax;
+    background-position:
+      -50vmax -40vmax,
+      50vmax -30vmax,
+      20vmax 0vmax,
+      -10vmax 10vmax,
+      40vmax 60vmax;
+  }
+}
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+body {
+    color: #fff;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+    color: #fff;
+}
+
+.logo {
+    font-size: 2em;
+    color: #359381;
+    pointer-events: none;
+    margin-right: 270px;
+    color: #fff;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    color: #FFEC86;
+}
+  </style>
+  </head>
+  <body>
+    <nav id="navbar_main" class="navbar fixed-top navbar-expand-lg navbar-light">
+      <!-- brand -->
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" width="200px" alt="brand_logo" style="padding-bottom: 0.25em;">
+      </a>
+      <!-- nav收缩起来时候的button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+          <li id="nav_content" class="nav-item navigation a">
+            <a class="nav-link" href="2.html">主页</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">|</a>
+          </li>
+
+          <li class="nav-item active navigation a ">
+            <a id="nav_content" class="nav-link" href="1.html">作品</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">|</a>
+          </li>
+
+          <li id="nav_content" class="nav-item navigation a ">
+            <a class="nav-link" href="about_me.html">关于我</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="parent"  >
+
+          <video class="video_back" src="jiyi.mp4" muted autoplay="autoplay">
+          </video>
+      </section>
+    <script src="script333.js"></script>
+
+  </body>
+  <script>
+    let a=document.querySelector('.mp4')
+    console.log(a);
+    a.addEventListener('click',(e)=>{
+     a.play()
+    })
+  </script>
+</html>
