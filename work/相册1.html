@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>somewhere·网页相册</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .shell{
+        height: 100vh;
+        overflow-x: hidden;
+        perspective: 3px;
+    }
+    .shell div{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: 30px;
+        letter-spacing: 2px;
+    }
+    .image{
+        transform: translateZ(-1.5px) scale(1.6);
+        background-size: cover;
+        height: 150vh;
+        z-index: -1;
+    }
+    .text{
+        height: 70vh;
+        background-image:url('背景.jpg');
+        background-size: cover;
+        background-attachment:fixed;
+    }
+    .text h1{
+        color: #000;
+        font-size: 20px;
+    }
+    .heading{
+        z-index: -1;
+        transform: translateY(-30vh) translateZ(1px);
+        color: #fff;
+        font-size: 30px;
+    }
+    ul li{
+        list-style-type:none;
+      }
+</style>
+
+<body>
+
+    <div class="shell">
+        <div class="image" style="background-image: url('梦幻1.jpeg');"></div>
+        <div class="heading">
+            <h1>vision</h1>
+        </div>
+        <div class="text">
+            <h1>Here is an introduction to the photos, but I haven't figured it out yet. Let's leave it blank for now.</h1>
+        </div>
+
+        <div class="image" style="background-image: url('梦幻2.jpeg');"></div>
+        <div class="heading">
+            <h1>vision</h1>
+        </div>
+        <div class="text">
+            <h1>Here is an introduction to the photos, but I haven't figured it out yet. Let's leave it blank for now.</h1>
+        </div>
+
+        <div class="image" style="background-image: url('梦幻3.jpeg');"></div>
+        <div class="heading">
+            <h1>vision</h1>
+        </div>
+        <div class="text">
+            <h1>Here is an introduction to the photos, but I haven't figured it out yet. Let's leave it blank for now.</h1>
+        </div>
+
+        <div class="image" style="background-image: url('梦幻4.jpeg');"></div>
+        <div class="heading">
+            <h1>vision</h1>
+        </div>
+        <div class="text">
+            <h1>Here is an introduction to the photos, but I haven't figured it out yet. Let's leave it blank for now.</h1>
+        </div>
+
+        <div class="image" style="background-image: url('梦幻5.jpeg');"></div>
+        <div class="heading">
+            <h1>vision</h1>
+        </div>
+        <div class="text">
+            <h1>Here is an introduction to the photos, but I haven't figured it out yet. Let's leave it blank for now.</h1>
+        </div>
+
+
+        <div class="image" style="background-image: url('梦谷.jpeg');"></div>
+        <div class="heading">
+            <h1>hyperreality</h1>
+        </div>
+        <div class="text">
+            <h1>Here is an introduction to the photos, but I haven't figured it out yet. Let's leave it blank for now.</h1>
+        </div>
+
+        <div class="image" style="background-image: url('梦谷1.jpeg');"></div>
+        <div class="heading">
+            <h1>hyperreality</h1>
+        </div>
+        <div class="text">
+            <h1>Here is an introduction to the photos, but I haven't figured it out yet. Let's leave it blank for now.</h1>
+        </div>
+
+        <div class="image" style="background-image: url('梦谷2.jpeg');"></div>
+        <div class="heading">
+            <h1>hyperreality</h1>
+        </div>
+        <div class="text">
+            <h1>Here is an introduction to the photos, but I haven't figured it out yet. Let's leave it blank for now.</h1>
+        </div>
+
+        <div class="image" style="background-image: url('梦谷3.jpeg');"></div>
+        <div class="heading">
+            <h1>hyperreality</h1>
+        </div>
+        <div class="text">
+            <h1>Here is an introduction to the photos, but I haven't figured it out yet. Let's leave it blank for now.</h1>
+        </div>
+
+        <div class="image" style="background-image: url('梦谷4.jpeg');"></div>
+        <div class="heading">
+            <h1>hyperreality</h1>
+        </div>
+        <div class="text">
+            <h1>Here is an introduction to the photos, but I haven't figured it out yet. Let's leave it blank for now.</h1>
+        </div>
+
+
+        <div class="image" style="background-image: url('人.jpeg');"></div>
+        <div class="heading">
+            <h1>oddball</h1>
+        </div>
+        <div class="text">
+            <h1>Here is an introduction to the photos, but I haven't figured it out yet. Let's leave it blank for now.</h1>
+        </div>
+
+        <div class="image" style="background-image: url('人1.jpeg');"></div>
+        <div class="heading">
+            <h1>oddball</h1>
+        </div>
+        <div class="text">
+            <h1>Here is an introduction to the photos, but I haven't figured it out yet. Let's leave it blank for now.</h1>
+        </div>
+
+        <div class="image" style="background-image: url('人2.jpeg');"></div>
+        <div class="heading">
+            <h1>oddball</h1>
+        </div>
+        <div class="text">
+            <h1>Here is an introduction to the photos, but I haven't figured it out yet. Let's leave it blank for now.</h1>
+        </div>
+
+        <div class="image" style="background-image: url('人3.jpeg');"></div>
+        <div class="heading">
+            <h1>oddball</h1>
+        </div>
+        <div class="text">
+            <h1>Here is an introduction to the photos, but I haven't figured it out yet. Let's leave it blank for now.</h1>
+        </div>
+
+        <div class="image" style="background-image: url('人4.jpeg');"></div>
+        <div class="heading">
+            <h1>oddball</h1>
+        </div>
+        <div class="text">
+            <h1>Here is an introduction to the photos, but I haven't figured it out yet. Let's leave it blank for now.</h1>
+        </div>
+
+
+        <div class="image" style="background-image: url('景.jpeg');"></div>
+        <div class="heading">
+            <h1>somewhere</h1>
+        </div>
+        <div class="text">
+            <h1>Here is an introduction to the photos, but I haven't figured it out yet. Let's leave it blank for now.</h1>
+        </div>
+
+        <div class="image" style="background-image: url('景1.jpeg');"></div>
+        <div class="heading">
+            <h1>somewhere</h1>
+        </div>
+        <div class="text">
+            <h1>Here is an introduction to the photos, but I haven't figured it out yet. Let's leave it blank for now.</h1>
+        </div>
+
+        <div class="image" style="background-image: url('景2.jpeg');"></div>
+        <div class="heading">
+            <h1>somewhere</h1>
+        </div>
+        <div class="text">
+            <h1>Here is an introduction to the photos, but I haven't figured it out yet. Let's leave it blank for now.</h1>
+        </div>
+
+        <div class="image" style="background-image: url('景3.jpeg');"></div>
+        <div class="heading">
+            <h1>somewhere</h1>
+        </div>
+        <div class="text">
+            <h1>Here is an introduction to the photos, but I haven't figured it out yet. Let's leave it blank for now.</h1>
+        </div>
+
+        <div class="image" style="background-image: url('景4.jpeg');"></div>
+        <div class="heading">
+            <h1>somewhere</h1>
+        </div>
+        <div class="text">
+            <h1>Here is an introduction to the photos, but I haven't figured it out yet. Let's leave it blank for now.</h1>
+        </div>
+
+
+        <div class="image" style="background-image: url('天空.jpeg');"></div>
+        <div class="heading">
+            <h1>air</h1>
+        </div>
+        <div class="text">
+            <h1>Here is an introduction to the photos, but I haven't figured it out yet. Let's leave it blank for now.</h1>
+        </div>
+
+        <div class="image" style="background-image: url('天空1.jpeg');"></div>
+        <div class="heading">
+            <h1>air</h1>
+        </div>
+        <div class="text">
+            <h1>Here is an introduction to the photos, but I haven't figured it out yet. Let's leave it blank for now.</h1>
+        </div>
+
+        <div class="image" style="background-image: url('天空2.jpeg');"></div>
+        <div class="heading">
+            <h1>air</h1>
+        </div>
+        <div class="text">
+            <h1>Here is an introduction to the photos, but I haven't figured it out yet. Let's leave it blank for now.</h1>
+        </div>
+
+        <div class="image" style="background-image: url('天空3.jpeg');"></div>
+        <div class="heading">
+            <h1>air</h1>
+        </div>
+        <div class="text">
+            <h1>Here is an introduction to the photos, but I haven't figured it out yet. Let's leave it blank for now.</h1>
+        </div>
+
+        <div class="image" style="background-image: url('天空4.jpeg');"></div>
+        <div class="heading">
+            <h1>air</h1>
+        </div>
+        <div class="text">
+            <h1>Here is an introduction to the photos, but I haven't figured it out yet. Let's leave it blank for now.</h1>
+        </div>
+
+
+        <div class="image" style="background-image: url('白塔.jpg');"></div>
+        <div class="heading">
+          <div >
+                 <ul>
+                     <li><a href="主页.html"><button type="button" class="btn btn-outline-light"><h1>End the Journey</h1></button></a></li>
+                      </ul>
+                   </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      </body>
+    </html>
+</body>
+</html>
